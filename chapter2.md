@@ -22,7 +22,7 @@ Contoh kode untuk memuat dan menyimpan gambar:
 from PIL import Image
 
 # Memuat gambar
-image = Image.open('example.jpg')
+image = Image.open('girl.jpg')
 
 # Menyimpan gambar
 image.save('result.jpg')
