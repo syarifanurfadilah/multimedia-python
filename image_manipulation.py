@@ -7,8 +7,8 @@ def manipulate_image(input_path, output_path):
         print("✅ Gambar berhasil dimuat")
 
         # Operasi Cropping dengan validasi ukuran
-        if image.width > 200 and image.height > 200:
-            cropped_image = image.crop((10, 10, 200, 200))
+        if image.width > 100 and image.height > 100:
+            cropped_image = image.crop((10, 10, 100, 100))
             cropped_image.save('cropped_' + output_path)
             print("✅ Cropping berhasil")
         else:
