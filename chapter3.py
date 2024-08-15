@@ -4,27 +4,27 @@ from PIL import Image, ImageTk
 from tkinter import filedialog
 from pydub import AudioSegment
 from pydub.playback import play
-# Video processing
-video = VideoFileClip('vidio.mp4')
+# # Video processing
+# video = VideoFileClip('vidio.mp4')
 
-# Saving the original video
-video.write_videofile('result.mp4')
+# # Saving the original video
+# video.write_videofile('result.mp4')
 
-# Creating a short video clip of the first 10 seconds
-short_video = video.subclip(0, 10)
-short_video.write_videofile('short_result.mp4')
+# # Creating a short video clip of the first 10 seconds
+# short_video = video.subclip(0, 10)
+# short_video.write_videofile('short_result.mp4')
 
-# Concatenating the original and short video
-combined_video = concatenate_videoclips([video, short_video])
-combined_video.write_videofile('combined_result.mp4')
+# # Concatenating the original and short video
+# combined_video = concatenate_videoclips([video, short_video])
+# combined_video.write_videofile('combined_result.mp4')
 
-# Reversing the short video
-reversed_video = short_video.fx(vfx.time_mirror)
-reversed_video.write_videofile('reversed_result.mp4')
+# # Reversing the short video
+# reversed_video = short_video.fx(vfx.time_mirror)
+# reversed_video.write_videofile('reversed_result.mp4')
 
-# Speeding up the short video
-sped_up_video = short_video.fx(vfx.speedx, 2)
-sped_up_video.write_videofile('sped_up_result.mp4')
+# # Speeding up the short video
+# sped_up_video = short_video.fx(vfx.speedx, 2)
+# sped_up_video.write_videofile('sped_up_result.mp4')
 
 from PIL import Image, ImageTk
 from tkinter import filedialog
